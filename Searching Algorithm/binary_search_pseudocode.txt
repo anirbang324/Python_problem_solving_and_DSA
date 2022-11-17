@@ -1,0 +1,7 @@
+1. create function with two parameters which are a sorted array and a value.
+2. create two pointers : a left pointer at the start of the array and a right pointer at the end of the array.
+3. based on the left and right pointer, calculate the middle pointer:
+    - while middle is not equal to the value and start <= end continue the loop:
+        a. if middle is greater than the value move the right pointer down.
+        b. if middle is greater than the value move the left pointer up.
+4. If the value is never found, return -1.
