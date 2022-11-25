@@ -10,3 +10,6 @@ def bubblesort(list):
 
 mylist = [2,4,1,6,8,5]
 bubblesort(mylist)
+
+# time complexiety : O(n^2)
+# space complexiety : O(1) - since no extra space is required.
