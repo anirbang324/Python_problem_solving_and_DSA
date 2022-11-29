@@ -4,20 +4,21 @@
 
 
 def insertionsort(mylist):
-    for i in range(1,len(mylist)):  #..............O(n)
-        key = mylist[i] #..............O(1)
-        j = i-1
+    for i in range(1, len(mylist)):  # ..............O(n)
+        key = mylist[i]  # ..............O(1)
+        j = i - 1
 
-        while j>=0 and key < mylist[j]: #.............O(n)
-            mylist[j+1] = mylist[j] #.............O(1)
-            j-=1
+        while j >= 0 and key < mylist[j]:  # .............O(n)
+            mylist[j + 1] = mylist[j]  # .............O(1)
+            j -= 1
 
-        mylist[j+1] = key
+        mylist[j + 1] = key
     print(mylist)
 
-nums = [2,5,1,7,1,4,5]
+
+nums = [2, 5, 1, 7, 1, 4, 5]
 
 insertionsort(nums)
 
-# time complexiety : O(n^2)
-# space complexiety : O(1)
+# time complexity : O(n^2)
+# space complexity : O(1)
